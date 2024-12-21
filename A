@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمایشگاه اتومبیل حسن‌نژاد</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>نمایشگاه اتومبیل حسن‌نژاد</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#cars">خودروها</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>بهترین خودروها، بهترین قیمت‌ها</h2>
+        <p>خودروهای لوکس و اقتصادی با شرایط ویژه</p>
+        <a href="#cars" class="btn">مشاهده خودروها</a>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars-section">
+        <h2>خودروهای محبوب</h2>
+        <div class="cars-container">
+            <div class="car">
+                <img src="car1.jpg" alt="خودرو 1">
+                <h3>پورشه 911</h3>
+                <p>قیمت: 8 میلیارد تومان</p>
+            </div>
+            <div class="car">
+                <img src="car2.jpg" alt="خودرو 2">
+                <h3>بی ام و X5</h3>
+                <p>قیمت: 5 میلیارد تومان</p>
+            </div>
+            <div class="car">
+                <img src="car3.jpg" alt="خودرو 3">
+                <h3>تویوتا کمری</h3>
+                <p>قیمت: 2 میلیارد تومان</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>تماس با ما</h2>
+        <form>
+            <input type="text" placeholder="نام" required>
+            <input type="email" placeholder="ایمیل" required>
+            <textarea placeholder="پیام شما"></textarea>
+            <button type="submit">ارسال</button>
+        </form>
+        <p>آدرس: تهران، خیابان ولیعصر، نمایشگاه حسن‌نژاد</p>
+        <p>تلفن: 021-12345678</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 نمایشگاه اتومبیل حسن‌نژاد. تمام حقوق محفوظ است.</p>
+    </footer>
+</body>
+</html>
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    direction: rtl;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cars-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.cars-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.car img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #eee;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-section form button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
